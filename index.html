@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unreleased - Hero Section</title>
+
+  <!-- Example font-face or import (replace with your actual font setup) -->
+  <!--
+  @font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url('CabinetGrotesk-VariableLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+  }
+  -->
+
+  <style>
+    /* Reset & Box-Sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body & HTML */
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Cabinet Grotesk', sans-serif; /* Use your actual font name */
+      background-color: #000; /* Fallback if background image doesn't load */
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url("https://github.com/papazull/urpage/blob/main/UNRELEASED%20BACKGROUND.jpg?raw=true")
+                  center center / cover no-repeat;
+    }
+
+    /* Apply to Join Link */
+    .apply-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #f1efd2;             /* Text color from style guide */
+      font-weight: 200;           /* Light weight for "Variable Light" */
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .apply-link:hover {
+      opacity: 0.8;
+    }
+
+    /* Centered Logo */
+    .logo-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 350px;
+      width: 80%; /* Ensures responsiveness on mobile */
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .apply-link {
+        top: 15px;
+        right: 15px;
+        font-size: 0.9rem;
+      }
+      .logo-center {
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <a href="#" class="apply-link">Apply to Join</a>
+    <img 
+      src="https://github.com/papazull/urpage/blob/main/Logo%20+%20Tagline%20Unreleased_Cream.png?raw=true" 
+      alt="Unreleased Logo" 
+      class="logo-center" 
+    />
+  </section>
+</body>
+</html>
